@@ -1,0 +1,38 @@
+{
+  "name": "postcss-cli-test",
+  "version": "1.0.0",
+  "description": "A repo that includes a minimal test case related to https://github.com/postcss/postcss-cli/issues/114",
+  "main": "",
+  "scripts": {
+    "works": "postcss css/test.css -u autoprefixer -o ../dist/css/prefixed.css",
+    "doesntwork": "cat css/test.css | postcss -u autoprefixer -o ../dist/css/prefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarukuku/postcss-cli-test.git"
+  },
+  "keywords": [
+    "postcss-cli",
+    "autoprefixer",
+    "test"
+  ],
+  "author": "Joonas Salovaara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarukuku/postcss-cli-test/issues"
+  },
+  "homepage": "https://github.com/sarukuku/postcss-cli-test#readme",
+  "dependencies": {
+    "autoprefixer": "6.7.7",
+    "postcss": "5.2.16",
+    "postcss-cli": "3.0.0"
+  },
+  "browserslist": [
+    "defaults",
+    "last 4 versions",
+    "last 6 iOS versions",
+    "last 6 Android versions",
+    "last 6 Safari versions",
+    "last 2 ie versions"
+  ]
+}
